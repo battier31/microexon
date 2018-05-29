@@ -1,0 +1,6 @@
+@HD	VN:1.0	SO:coordinate
+@SQ	SN:AT1G67560.1	LN:2754
+@SQ	SN:AT1G55020.1	LN:2580
+@SQ	SN:AT1G17420.1	LN:2760
+@PG	ID:hisat2	PN:hisat2	CL:"/home/yiwang/data/biotools/hisat2/hisat2-align-s --wrapper basic-0 -p 6 -x /home/yiwang/data/Public/microexon/reference_database/reference -S /home/yiwang/data/Public/microexon/result/transcript.sam -1 /home/yiwang/data/Public/microexon/sequences_1.fastq -2 /home/yiwang/data/Public/microexon/sequences_2.fastq"	VN:2.1.0
+

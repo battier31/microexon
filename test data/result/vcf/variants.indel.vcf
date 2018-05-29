@@ -1,0 +1,33 @@
+##fileformat=VCFv4.1
+##fileDate=05/24/2018
+##source=scalpel0.5.3 (beta), January 25 2016
+##reference=/home/yiwang/data/Public/microexon/transcript_O.fasta
+##INFO=<ID=AVGCOV,Number=1,Type=Float,Description="average k-mer coverage">
+##INFO=<ID=MINCOV,Number=1,Type=Integer,Description="minimum k-mer coverage of non-reference allele">
+##INFO=<ID=ALTCOV,Number=1,Type=Integer,Description="k-mer coverage of reference + any other allele (different from current non-reference) at locus">
+##INFO=<ID=ZYG,Number=1,Type=String,Description="zygosity">
+##INFO=<ID=COVRATIO,Number=1,Type=Float,Description="coverage ratio [(MINCOV)/(ALTCOV+MINCOV)]">
+##INFO=<ID=CHI2,Number=1,Type=Float,Description="chi-square score">
+##INFO=<ID=FISHERPHREDSCORE,Number=1,Type=Float,Description="phred-scaled p-value from the Fisher's exact test for tumor-normal allele counts">
+##INFO=<ID=INH,Number=1,Type=String,Description="inheritance">
+##INFO=<ID=BESTSTATE,Number=1,Type=String,Description="state of the mutation">
+##INFO=<ID=COVSTATE,Number=1,Type=String,Description="coverage state of the mutation">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Somatic mutation">
+##INFO=<ID=DENOVO,Number=0,Type=Flag,Description="De novo mutation">
+##FILTER=<ID=MS,Description="Microsatellite mutation (format: #LEN#MOTIF)">
+##FILTER=<ID=LowVaf,Description="low variant allele frequency (<0.05)">
+##FILTER=<ID=LowAltCnt,Description="low alternative allele count (<5)">
+##FILTER=<ID=HighAltCnt,Description="high alternative allele count (>1000000)">
+##FILTER=<ID=LowCov,Description="low coverage (<5)">
+##FILTER=<ID=HighCov,Description="high coverage (>1000000)">
+##FILTER=<ID=LowChi2score,Description="low chi-squared score (<0)">
+##FILTER=<ID=HighChi2score,Description="high chi-squared score (>20)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="k-mer Depth">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="k-mer depth supporting reference/indel at the site">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	sample
+AT1G17420.1	670	.	CAGCCGTATTTGCCGAATGAGACACCAAGCGGATTAAGAGTATTGAGGGAGAAAGAGTTGAAGAATCTACGAGGAGATGGAAGTGGAGTGAGAAAATTATCAGACAGAATTTACGACTTTGATGTTTACAACGACCTTGGAAATCCCGACAAATCATCCGAGCTCTCTCGCCCCAAACTCGGTGGCAA	C	.	PASS	AVGCOV=23.0;MINCOV=23;ALTCOV=11;ZYG=het;COVRATIO=0.68;CHI2=4.24;FISHERPHREDSCORE=0;INH=na;BESTSTATE=na;COVSTATE=na	GT:AD:DP	0/1:11,23:34
+AT1G67560.1	379	.	G	GA	.	PASS	AVGCOV=32.0;MINCOV=32;ALTCOV=0;ZYG=hom;COVRATIO=1.00;CHI2=0;FISHERPHREDSCORE=0;INH=na;BESTSTATE=na;COVSTATE=na	GT:AD:DP	1/1:0,32:32
+AT1G67560.1	888	.	A	AGG	.	PASS	AVGCOV=40.0;MINCOV=40;ALTCOV=44;ZYG=het;COVRATIO=0.48;CHI2=0.19;FISHERPHREDSCORE=0;INH=na;BESTSTATE=na;COVSTATE=na	GT:AD:DP	0/1:44,40:84
+AT1G67560.1	1354	.	C	CAAT	.	PASS	AVGCOV=28.0;MINCOV=28;ALTCOV=0;ZYG=hom;COVRATIO=1.00;CHI2=0;FISHERPHREDSCORE=0;INH=na;BESTSTATE=na;COVSTATE=na	GT:AD:DP	1/1:0,28:28
+AT1G67560.1	1421	.	A	AGGG	.	PASS	AVGCOV=34.0;MINCOV=34;ALTCOV=0;ZYG=hom;COVRATIO=1.00;CHI2=0;FISHERPHREDSCORE=0;INH=na;BESTSTATE=na;COVSTATE=na	GT:AD:DP	1/1:0,34:34

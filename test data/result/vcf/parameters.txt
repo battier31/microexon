@@ -1,0 +1,24 @@
+Parameters: 
+-- k-mer size (bp): 25
+-- coverage threshold: 5
+-- low coverage threshold: 2
+-- size (bp) of the left and right extensions (radius): 100
+-- window-size size (bp): 400
+-- max coverage per region: 10000
+-- step size (bp): 100
+-- minimum mapping quality: 1
+-- minimum coverage for exporting mutation: 5
+-- minimum coverage ratio for sequencing errors: 0.01
+-- minimum coverage ratio for exporting mutation: 0.05
+-- max number of mismatches for near-perfect repeats: 3
+-- limit number of sequence paths to: 1000000
+-- output directory: /home/yiwang/data/Public/microexon/result/vcf
+-- max number of parallel jobs: 0
+-- bam file: /home/yiwang/data/Public/microexon/result/transcript.sorted.bam
+-- bed file: /home/yiwang/data/Public/microexon/reference_database/bed.file
+-- reference file: /home/yiwang/data/Public/microexon/transcript_O.fasta
+-- sample: ALL
+-- output format for variants: vcf
+-- file of selected coordinates: null
+-- output variants in target? no
+-- keep log files? no
