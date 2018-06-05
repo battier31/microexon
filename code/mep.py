@@ -4,6 +4,7 @@ import os
 import subprocess
 
 
+# 读取 生成bed_file
 def generateBedFile(fasta_file, reference_database_folder):
     bed_file = open(reference_database_folder + "/" + "bed.file", "w");
     seq_id = "";
