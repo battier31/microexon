@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/learnPython/.idea/learnPython.iml" filepath="$USER_HOME$/learnPython/.idea/learnPython.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microexon.iml" filepath="$PROJECT_DIR$/.idea/microexon.iml" />
     </modules>
   </component>
